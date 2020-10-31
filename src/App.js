@@ -1,14 +1,14 @@
 import React from "react";
-import { MovieProvider } from "./movielistcontext";
-import "./App.css";
+import Books from "./components/Books";
+import Header from "./components/Header";
 
 function App() {
-  return;
-  <MovieProvider>
-    <div className="App">
-      <h1>hey</h1>
+  return (
+    <div className="app">
+      <Header />
+      <Books />
     </div>
-  </MovieProvider>;
+  );
 }
 
 export default App;
