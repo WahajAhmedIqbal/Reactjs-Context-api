@@ -1,13 +1,17 @@
 import React from "react";
-import Books from "./components/Books";
-import Header from "./components/Header";
+import { MovieListProvider } from "./components/MovieListContext";
+import MovieList from "./components/MovieList";
+import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Books />
-    </div>
+    <MovieList>
+      <div className="app">
+        <h1>hello testing</h1>
+        <Nav />
+        <MovieList />
+      </div>
+    </MovieList>
   );
 }
 
